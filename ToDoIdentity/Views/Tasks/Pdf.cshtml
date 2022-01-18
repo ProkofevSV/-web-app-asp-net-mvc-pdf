@@ -1,0 +1,61 @@
+﻿@using ToDoIdentity.Models
+@model Task
+
+@{
+    Layout = null;
+}
+
+<html>
+<head>
+    <style>
+    </style>
+</head>
+
+<body>
+
+
+
+    <table class="table align-middle " style="text-align:center">
+        <tbody>
+            <tr>
+
+                <td>
+                    <br />
+                    <h1><u>@Model.Name</u></h1>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2">
+                    <h2>Описание</h2>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <p>
+                        <span><b>Что нужно сделать?</b></span>
+                        <span><pre style="width: auto; white-space: pre-wrap;">@Model.Description</pre></span>
+                    </p>
+                    <p>
+                        <span><b>Примерные сроки выполнения</b></span>
+                        <span><pre style="width: auto; white-space: pre-wrap;">@Model.Time</pre></span>
+                    </p>                    
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
